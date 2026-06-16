@@ -1,0 +1,9 @@
+<div id="nav-bar">
+    <ul>
+        @for (item of items(); track item.label) {
+            <li>
+                <a [href]="item.route">{{ item.label }}</a>
+            </li>
+        }
+    </ul>
+</div>
